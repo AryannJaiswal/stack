@@ -11,7 +11,7 @@ def __init__(self, size=5):
 
         else:
             print()
-            print("\nStack Overflow!")
+            print("\nStack Overflow")
 
     def pop(self):
         if self.top == -1:
@@ -36,7 +36,6 @@ print("Enter 1 to push")
 print("Enter 2 to pop")
 print("Enter 3 to exit")
 while True:
-    option = int(input("Enter your choice:"))
     if option == 1:
         list.push(int(input("Enter the value you want to push:")))
         print()
@@ -46,6 +45,7 @@ while True:
         list.pop()
         print()
         print(list)
-        print()
-    if option == 3:
+        print("popped out")
+
+   if option == 3:
         break
